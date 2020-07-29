@@ -1,14 +1,13 @@
 package src;
-import data.Convert;
+import data.*;
 
 public class Solution {
-    
     public static void main(final String[] args) {
 
-        final String hexa = "BABE";
-        final int deci = Convert.HexaToDeci(hexa);
+        int deci = 79;
+        String hexa = Convert.DeciToHexa(deci);
         
-        System.out.println(deci);
+        System.out.println(hexa);
     }
 }
 
