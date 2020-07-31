@@ -1,32 +1,26 @@
-
-// import java.io.File;
+import java.io.File;
 import java.io.IOException;
-// import java.io.PrintWriter;
-// import java.nio.file.Paths;
-// import java.util.*;
+import java.io.PrintWriter;
+import java.nio.file.Paths;
+import java.util.*;
 
-import src.Convert;
+import src.*;
 
 public class Java {
     public static void main(final String[] args) throws IOException {
-        // Scanner scn = 
-        //     new Scanner(Paths.get("F:\\Huy\\Study\\Java\\Java & C#\\Java\\IO data\\input.txt"),
-        //                  "UTF-8");
-        // PrintWriter printer = 
-        //     new PrintWriter("F:\\Huy\\Study\\Java\\Java & C#\\Java\\IO data\\output.txt",
-        //                  "UTF-8");
-        // StringBuilder str;       
+        Scanner scanner = 
+                new Scanner(Paths.get(UserPath.getRelativePath("\\Java\\data\\input.hp")), "UTF-8");
+        PrintWriter printer = 
+                new PrintWriter(UserPath.getRelativePath("\\Java\\data\\output.hp"), "UTF-8");     
+        StringBuilder str = new StringBuilder("");
 
-        // while (scn.hasNext()) {
-        //     str = new StringBuilder(scn.nextLine());
-        //     printer.println(str);
-        // }
-        
-        // printer.close();
+        do {
+            str.replace(0, str.length(), scanner.nextLine());
+            printer.println(Convert.BinaryToDeci(str.toString()));
+        } while (scanner.hasNext());
 
-        int deci = 1087;
-        System.out.println(Convert.DeciToHexa(deci));
-        // scn.close();  
+        printer.close();
+        scanner.close();  
     }
 }
 
