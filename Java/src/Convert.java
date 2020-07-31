@@ -1,4 +1,4 @@
-package data;
+package src;
 
 public class Convert {
     private static String alpha = "0123456789ABCDEF";
@@ -15,17 +15,18 @@ public class Convert {
     }
 
     public static String DeciToHexa (final int deciNumber) {
-        String hexaNumber = "";
-        int r = deciNumber % 16;
+        StringBuilder hexaNumber = new StringBuilder("");
+        int deci = deciNumber;
 
-        if ((deciNumber - r) == 0) {
-            return hexaNumber + toChar(r);
-        } else {
-            return hexaNumber + DeciToHexa((deciNumber - r) / 16) + toChar(r);
+        while (deci != 0) {
+            hexaNumber.insert(0, alpha.charAt(deci % 16));
+            deci = (deci - (deci % 16)) / 16; 
         }
+
+        return hexaNumber.toString();
     }
 
-    private static char toChar (final int i) {
-        return alpha.charAt(i);
-    }
+    // private static char toChar (final int i) {
+    //     return alpha.charAt(i);
+    // }
 }
