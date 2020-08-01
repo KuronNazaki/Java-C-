@@ -1,1 +1,12 @@
-Hihi
+using System;
+namespace WoodysOldSack;
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("Hello motherucker");
+            //HIHI Modified
+		}
+	}
+}
