@@ -7,8 +7,7 @@ namespace C_
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Motherfucker");
-            Console.WriteLine(wcln(45, 36));
-            Console.WriteLine(bcnn(45, 36));
+            printFib(10);
         }
         static int Turn(int a, int b)
         {
@@ -55,6 +54,23 @@ namespace C_
             int small = (a * b) / wcln(a, b);
             return small;
         }
-
+        static int fib(int a)
+        {
+            if ((a == 0) || (a == 1))
+            {
+                return a;
+            }
+            else
+            {
+                return fib(a - 1) + fib(a - 2); 
+            }
+        }
+        static void printFib(int a)
+        {
+            for(int i = 0; i < a; i++ )
+            {
+                Console.Write(fib(i).ToString() + " ");
+            }
+        }
     }
 }
