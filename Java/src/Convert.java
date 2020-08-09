@@ -55,4 +55,15 @@ public class Convert {
 
         return binaryNumber.toString();
     }
+
+    public static int getFibonacci (final int n) {
+        if (n < 0) {
+            return -1;
+        }
+        else if (n == 0 ||  n ==1) {
+            return n;
+        } else {
+            return getFibonacci(n - 1) + getFibonacci(n - 2);
+        }
+    }
 }
