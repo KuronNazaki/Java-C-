@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/bill/Projects/C#/C#.csproj": {}
+    "/home/bill/Documents/Toys/C#/C#.csproj": {}
   },
   "projects": {
-    "/home/bill/Projects/C#/C#.csproj": {
+    "/home/bill/Documents/Toys/C#/C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bill/Projects/C#/C#.csproj",
+        "projectUniqueName": "/home/bill/Documents/Toys/C#/C#.csproj",
         "projectName": "C#",
-        "projectPath": "/home/bill/Projects/C#/C#.csproj",
+        "projectPath": "/home/bill/Documents/Toys/C#/C#.csproj",
         "packagesPath": "/home/bill/.nuget/packages/",
-        "outputPath": "/home/bill/Projects/C#/obj/",
+        "outputPath": "/home/bill/Documents/Toys/C#/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/bill/.nuget/NuGet/NuGet.Config"

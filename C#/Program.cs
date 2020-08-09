@@ -7,43 +7,54 @@ namespace C_
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Motherfucker");
-            Console.Write("How many numbers? : ");
-            int length = Convert.ToInt32(Console.ReadLine());
-            int a = 1; int b = 1;
-            Fibon(a,b, length);
+            Console.WriteLine(wcln(45, 36));
+            Console.WriteLine(bcnn(45, 36));
         }
-        static void Max(int[] a)
+        static int Turn(int a, int b)
         {
-            for (int e = 0; e < 5; e ++)
+            int check;
+            if (a + b > 100)
             {
-                for (int Nemo = e + 1; Nemo < 5; Nemo ++)
-                {
-                    if (a[e] >= a[Nemo])
-                    { 
-                        int temp = a[e];
-                        a[e] = a[Nemo];
-                        a[Nemo] = temp;
-                    }
-                }
+                Console.WriteLine("Sum is greater than 100.");
+                check = 1;
             }
+            else if(a + b < 100)
+            {
+                Console.WriteLine("Sum is less then 100.");
+                check = 0;
+            }
+            else
+            {
+                Console.WriteLine("Sum is 100.");
+                check = 2;
+            }
+            return check;
         }
-        static int Century(int year)
+        public static int wcln(int a, int b)
         {
-            int cent = (year/100) + 1;
-            return cent;
+            if (a == 0)
+            {
+                return b;
+            }
+            if (b == 0)
+            {
+                return a;
+            }
+            if (a == b)
+            {
+                return a;
+            }
+            if (a > b)
+            {
+                return wcln(a - b, b);
+            }
+            return wcln(a, b-a);
         }
-        static void Fibon(int a, int b, int length)
+        static int bcnn(int a, int b)
         {
-            int d = 1;
-            Console.Write(a + " " + b + " ");
-            while(d < length - 1)
-                {
-                    d++;
-                    int c = a + b;
-                    a = b;
-                    b = c;
-                    Console.Write(c + " ");
-                }
+            int small = (a * b) / wcln(a, b);
+            return small;
         }
+
     }
 }

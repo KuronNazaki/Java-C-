@@ -11,3 +11,16 @@
 /home/bill/Projects/C#/obj/Debug/netcoreapp3.1/C#.dll
 /home/bill/Projects/C#/obj/Debug/netcoreapp3.1/C#.pdb
 /home/bill/Projects/C#/obj/Debug/netcoreapp3.1/C#.genruntimeconfig.cache
+/home/bill/Documents/Toys/C#/bin/Debug/netcoreapp3.1/C#
+/home/bill/Documents/Toys/C#/bin/Debug/netcoreapp3.1/C#.deps.json
+/home/bill/Documents/Toys/C#/bin/Debug/netcoreapp3.1/C#.runtimeconfig.json
+/home/bill/Documents/Toys/C#/bin/Debug/netcoreapp3.1/C#.runtimeconfig.dev.json
+/home/bill/Documents/Toys/C#/bin/Debug/netcoreapp3.1/C#.dll
+/home/bill/Documents/Toys/C#/bin/Debug/netcoreapp3.1/C#.pdb
+/home/bill/Documents/Toys/C#/obj/Debug/netcoreapp3.1/C#.csprojAssemblyReference.cache
+/home/bill/Documents/Toys/C#/obj/Debug/netcoreapp3.1/C#.AssemblyInfoInputs.cache
+/home/bill/Documents/Toys/C#/obj/Debug/netcoreapp3.1/C#.AssemblyInfo.cs
+/home/bill/Documents/Toys/C#/obj/Debug/netcoreapp3.1/C#.csproj.CoreCompileInputs.cache
+/home/bill/Documents/Toys/C#/obj/Debug/netcoreapp3.1/C#.dll
+/home/bill/Documents/Toys/C#/obj/Debug/netcoreapp3.1/C#.pdb
+/home/bill/Documents/Toys/C#/obj/Debug/netcoreapp3.1/C#.genruntimeconfig.cache
